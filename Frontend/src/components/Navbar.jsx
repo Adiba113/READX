@@ -5,7 +5,7 @@ function Navbar() {
   const [sticky,setSticky]=useState(false)
   useEffect(()=>{
     const handlescroll=()=>{
-      if(window.scroll>0){
+      if(window.scrollY>0){
         setSticky(true)
       }else{
         setSticky(false)
