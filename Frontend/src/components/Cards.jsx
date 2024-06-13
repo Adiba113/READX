@@ -5,7 +5,7 @@ export default function Cards({item}) {
     <>
     <div>
     <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src={item.image} alt="Shoes" /></figure>
+  <figure><img src={item.image} alt="Shoe" /></figure>
   <div className="card-body">
     <h2 className="card-title">
       Shoes!
