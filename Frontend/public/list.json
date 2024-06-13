@@ -1,0 +1,83 @@
+[
+    {
+        "id":1,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":2,
+        "name":"ComputerOrganizationAndDesign5thEdition2014",
+        "author":"David A Patterson",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":3,
+        "name":"digital_design-fifth_edition",
+        "author":"morris_mano",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":4,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":5,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":6,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":0,
+        "category":"Download",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":7,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":0,
+        "category":"Download",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":8,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":200,
+        "category":"Purchase",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":9,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":100,
+        "category":"Purchase",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    },
+    {
+        "id":10,
+        "name":"Data communication and networking-5th edition",
+        "author":"Forouzan",
+        "price":50,
+        "category":"Purchase",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1718282515~exp=1718286115~hmac=29c9849267bc05e1b276106d30958dd78e68152ba354962c254e5f2736f1c044&w=826"
+    }
+
+]
