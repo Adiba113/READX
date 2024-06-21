@@ -3,8 +3,8 @@ import banner from "../../public/Banner6.jpg";
 function Banner() {
   return (
     <>
-     <div className="max-w-screen-3xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row">
-        <div className=" order-1 w-full md:w-1/2 mt-12 md:mt-30">
+     <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row">
+        <div className=" order-1 w-full md:w-1/2 mt-12 md:mt-32">
          <div className="space-y-12">
          <h1 className="text-4xl font-bold">
             Hello, Welcome to <span className="text-pink-900">READX</span> to experience a new 
@@ -20,8 +20,12 @@ function Banner() {
          </div>
          <button className="btn mt-6 btn-secondary">Secondary</button>
           </div>
-        <div className=" order-2 w-full md:w-1/2">
-        <img src={banner} className="w-85 h-85" alt="Banner6"/>
+          <div className=" order-1 w-full mt-20 md:w-1/2">
+          <img
+            src={banner}
+            className="md:w-[550px] md:h-[460px] md:ml-12"
+            alt=""
+          />
         </div>
 
      </div> 
