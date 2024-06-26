@@ -82,7 +82,8 @@ function Navbar() {
                 <li>
                   <a>About</a>
                 </li>
-                <li><a>Item 3</a></li>
+                <li><a>Item</a>
+                </li>
               </ul>
             </div>
             <a className=" text-3xl font bold cursor-pointer">READX</a>
@@ -120,7 +121,7 @@ function Navbar() {
 
             </label>
             <div className="navbar-end">
-              <a className='bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cousor-pointer'
+              <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cousor-pointer"
               onClick={()=>document.getElementById("my_modal_3").showModal()}
               >Login</a>
               <Login/>
