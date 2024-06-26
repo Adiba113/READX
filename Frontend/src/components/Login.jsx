@@ -6,9 +6,16 @@ function Login() {
     <div>
       <dialog id="my_modal_3" className="modal">
   <div className="modal-box">
+
     <form method="dialog">
       {/* if there is a button in form, it will close the modal */}
-      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      <button
+      
+      className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+        ✕</button>
+      <Link to="/"  
+      className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+        ✕</Link>
     </form>
     <h3 className="font-bold text-lg">Login</h3>
     {/*email */}
@@ -35,9 +42,10 @@ function Login() {
         {/*button8*/}
        <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>Login</button>
      <p>
-        Not registered?
+        Not registered?{" "}
         <Link to="/signup"
-        className='underline text-blue-500 cursor-pointer'>SignUp</Link> </p>   
+        className='underline text-blue-500 cursor-pointer'>SignUp
+        </Link> </p>   
     </div>
   </div>
 </dialog>
