@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import banner from "../../public/Banner6.jpg";
+import ChatBar from './ChatBar';
 
 const Banner = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleChatBar = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row">
@@ -32,35 +27,7 @@ const Banner = () => {
           <img src={banner} className="md:w-[550px] md:h-[460px] md:ml-12" alt="Banner" />
         </div>
       </div>
-      <div className="fixed bottom-6 right-6 z-50">
-        <button
-          onClick={toggleChatBar}
-          className="bg-pink-500 text-white p-4 rounded-full shadow-lg hover:bg-pink-600 transition duration-300"
-        >
-          💬
-        </button>
-      </div>
-      {isOpen && (
-        <div className="fixed bottom-16 right-6 w-80 h-96 bg-white shadow-lg border rounded-lg p-4 z-50">
-          <h2 className="text-lg font-bold mb-4">Chat with us!</h2>
-          <div className="flex flex-col h-full">
-            <div className="flex-1 overflow-y-auto p-2">
-              {/* Chat messages will go here */}
-              <p className="text-gray-500">Start your conversation...</p>
-            </div>
-            <div className="mt-4 flex">
-              <input
-                type="text"
-                className="flex-1 border border-gray-300 p-2 rounded-l-lg focus:outline-none"
-                placeholder="Type a message..."
-              />
-              <button className="bg-pink-500 text-white p-2 rounded-r-lg hover:bg-pink-600 transition duration-300">
-                Send
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <ChatBar />
     </>
   );
 };

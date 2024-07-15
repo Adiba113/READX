@@ -78,6 +78,7 @@ function Navbar() {
                 </li>
                 <li>
                   <a>Contact</a>
+                  
                 </li>
                 <li>
                   <a>About</a>
