@@ -71,17 +71,17 @@ function Navbar() {
               </div>
               <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li>
-                  <a>Home</a>
+                <a href="/">Home</a>
                 </li>
                 <li>
-                  <a>Course</a>
+                <a href="/course">Course</a>
                 </li>
                 <li>
-                  <a>Contact</a>
+                <a href="/contact">Contact</a>
                   
                 </li>
                 <li>
-                  <a>About</a>
+                  <a href="/about">About</a>
                 </li>
                 <li><a>Item</a>
                 </li>
