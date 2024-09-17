@@ -1,0 +1,40 @@
+/* CartPage.css */
+.cart-page-container {
+  background-color: #001f3f; /* Dark blue background */
+  padding: 20px; /* Add some padding */
+  min-height: 100vh; /* Full height */
+}
+
+.cart-item {
+  transition: transform 0.2s;
+}
+
+.cart-item:hover {
+  transform: scale(1.05);
+}
+
+.cart-item img {
+  border-radius: 8px;
+}
+
+/* Button styles */
+button {
+  margin: 0 5px;
+  padding: 10px 15px; /* Increase padding for larger buttons */
+  border: none;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em; /* Increase font size */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
