@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import adiba from "../../public/adiba.jpg";
-import srabani from "../../public/srabani1.jpg";
+import srabani from "../../public/srabani2.jpg";
 function AboutUs() {
   const [showMoreSrabani, setShowMoreSrabani] = useState(false);
   const [showMoreNusrat, setShowMoreNusrat] = useState(false);
