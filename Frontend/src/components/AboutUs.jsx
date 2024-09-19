@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import adiba from "../../public/adiba.jpg";
 import srabani from "../../public/srabani1.jpg";
 import Navbar from '../components/Navbar'
-import Course from '../components/Course'
 import Footer from '../components/Footer'
 function AboutUs() {
   const [showMoreSrabani, setShowMoreSrabani] = useState(false);
