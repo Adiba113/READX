@@ -57,8 +57,10 @@ function Navbar({ book = [] }) {
       <li><Link to="/course">Course</Link></li>
       <li><Link to="/contact">Contact</Link></li>
       <li><Link to="/myOrders">My Orders</Link></li>
+      <li><Link to="/reviews">Reviews</Link></li> {/* New Reviews link */}
     </>
   );
+  
 
   return (
     <>
