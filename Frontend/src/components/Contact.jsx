@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import contact from "../../public/contact1.jpg";
+import Navbar from '../components/Navbar'
+import Course from '../components/Course'
+import Footer from '../components/Footer'
 function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -18,6 +21,8 @@ function Contact() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="bg-pink-100 p-10 rounded-xl shadow-lg max-w-md mx-auto mt-20">
       <h2 className="font-bold text-2xl mb-5 text-center text-pink-700">Contact Us</h2>
       <form onSubmit={handleSend}>
@@ -54,6 +59,8 @@ function Contact() {
           />
         </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

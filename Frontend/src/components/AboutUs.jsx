@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import adiba from "../../public/adiba.jpg";
-import srabani from "../../public/srabani2.jpg";
+import srabani from "../../public/srabani1.jpg";
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 function AboutUs() {
   const [showMoreSrabani, setShowMoreSrabani] = useState(false);
   const [showMoreNusrat, setShowMoreNusrat] = useState(false);
 
   return (
+    <>
+    <Navbar />
     <div className="bg-pink-100 p-10 rounded-xl shadow-lg max-w-4xl mx-auto mt-20">
       <h2 className="font-bold text-3xl mb-10 text-center text-gray-800">About Us</h2>
       <div className="flex flex-col md:flex-row gap-10">
@@ -41,6 +45,8 @@ function AboutUs() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
