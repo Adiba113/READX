@@ -2,9 +2,20 @@ import React, { useState } from 'react';
 
 const suggestedMessages = [
   { question: 'How To Purchase?', answer: 'First select the item, then go to add to cart. The location is fixed..inter university. After clicking buy now and payment, wait for the delivery.' },
+  { question: 'how to purchase', answer: 'First select the item, then go to add to cart. The location is fixed..inter university. After clicking buy now and payment, wait for the delivery.' },
+  { question: 'how to purchase?', answer: 'First select the item, then go to add to cart. The location is fixed..inter university. After clicking buy now and payment, wait for the delivery.' },
+
   { question: 'What are your working hours?', answer: 'Our working hours are from 9 AM to 6 PM, Monday to Friday.' },
-  { question: 'How to contact support?', answer: 'You can contact support by emailing support@readx.com or calling (123) 456-7890.' }
+  { question: 'How to contact support?', answer: 'You can contact support by emailing support@readx.com or calling (123) 456-7890.' },
+  { question: 'how to contact support?', answer: 'You can contact support by emailing support@readx.com or calling (123) 456-7890.' },
+  { question: 'how to contact support', answer: 'You can contact support by emailing support@readx.com or calling (123) 456-7890.' },
+  
+
+
+
 ];
+
+const defaultResponse = 'We are having some problems. Please for any inquiry email us at readx@gmail.com.';
 
 const ChatBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,22 +25,33 @@ const ChatBar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleSuggestedMessageClick = (message) => {
-    const newMessages = [...messages, { text: message.question, isBot: false }];
-    setMessages(newMessages);
-    setTimeout(() => {
-      setMessages([...newMessages, { text: message.answer, isBot: true }]);
-    }, 500); // Slight delay before showing the answer
-  };
-
   const handleSendMessage = (event) => {
     event.preventDefault();
     const messageInput = event.target.elements.message;
-    const newMessage = messageInput.value;
-    if (newMessage.trim() === '') return;
+    const newMessage = messageInput.value.trim();
+    if (newMessage === '') return;
 
-    const newMessages = [...messages, { text: newMessage, isBot: false }];
+    const userMessage = { text: newMessage, isBot: false };
+
+    // Check if the message matches any of the predefined questions
+    const matchedMessage = suggestedMessages.find(
+      (msg) => msg.question.toLowerCase() === newMessage.toLowerCase()
+    );
+
+    const botResponse = {
+      text: matchedMessage ? matchedMessage.answer : defaultResponse,
+      isBot: true,
+    };
+
+    // Add user message first
+    const newMessages = [...messages, userMessage];
     setMessages(newMessages);
+
+    // Then add the bot response after a short delay
+    setTimeout(() => {
+      setMessages([...newMessages, botResponse]);
+    }, 500);
+
     messageInput.value = '';
   };
 
@@ -48,20 +70,14 @@ const ChatBar = () => {
           <h2 className="text-lg font-bold mb-4">Chat with us!</h2>
           <div className="flex-1 overflow-y-auto p-2 mb-4">
             {messages.map((msg, index) => (
-              <div key={index} className={`my-2 p-2 rounded-lg ${msg.isBot ? 'bg-gray-100 text-gray-800' : 'bg-pink-500 text-white self-end'}`}>
+              <div
+                key={index}
+                className={`my-2 p-2 rounded-lg ${
+                  msg.isBot ? 'bg-gray-100 text-gray-800' : 'bg-pink-500 text-white self-end'
+                }`}
+              >
                 {msg.text}
               </div>
-            ))}
-          </div>
-          <div className="mb-4">
-            {suggestedMessages.map((msg, index) => (
-              <button
-                key={index}
-                onClick={() => handleSuggestedMessageClick(msg)}
-                className="block w-full text-left mb-2 p-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
-              >
-                {msg.question}
-              </button>
             ))}
           </div>
           <form onSubmit={handleSendMessage} className="flex">
