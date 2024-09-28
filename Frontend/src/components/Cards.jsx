@@ -15,7 +15,11 @@ export default function Cards({ item }) {
       <div className="card w-96 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
         <Link to={`/book/${item._id}`}>
           <figure>
-            <img src={item.image} alt={item.name} className="w-full h-auto" />
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-full h-72 object-cover" // Enforce consistent size
+            />
           </figure>
         </Link>
         <div className="card-body">
