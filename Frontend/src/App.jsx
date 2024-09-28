@@ -10,6 +10,7 @@ import { useAuth } from './context/AuthProvider';
 import CartPage from './components/CartPage';
 import MyOrders from './components/MyOrders';
 import BookDetails from './components/BookDetails'; // Import your BookDetails component
+import ReviewPage from './components/ReviewPage';
 
 function App() {
   const [authUser] = useAuth();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/myOrders" element={<MyOrders />} />
           <Route path="/book/:id" element={<BookDetails />} /> {/* Add this line for book details */}
+          <Route path="/reviews" element={<ReviewPage />} />
         </Routes>
         <Toaster />
       </div>
